@@ -16,6 +16,7 @@
 		C116069C2910990D0025C8BD /* quiz_app_2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116069B2910990D0025C8BD /* quiz_app_2022Tests.swift */; };
 		C11606A62910990D0025C8BD /* quiz_app_2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11606A52910990D0025C8BD /* quiz_app_2022UITests.swift */; };
 		C11606A82910990D0025C8BD /* quiz_app_2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11606A72910990D0025C8BD /* quiz_app_2022UITestsLaunchTests.swift */; };
+		C11606B52910997C0025C8BD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C11606B42910997C0025C8BD /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C11606A12910990D0025C8BD /* quiz app 2022UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quiz app 2022UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11606A52910990D0025C8BD /* quiz_app_2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_app_2022UITests.swift; sourceTree = "<group>"; };
 		C11606A72910990D0025C8BD /* quiz_app_2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_app_2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C11606B42910997C0025C8BD /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C11606862910990B0025C8BD /* SceneDelegate.swift */,
 				C11606882910990B0025C8BD /* ViewController.swift */,
 				C116068A2910990B0025C8BD /* Main.storyboard */,
+				C11606B42910997C0025C8BD /* background.png */,
 				C116068D2910990C0025C8BD /* Assets.xcassets */,
 				C116068F2910990C0025C8BD /* LaunchScreen.storyboard */,
 				C11606922910990C0025C8BD /* Info.plist */,
@@ -233,6 +236,7 @@
 			files = (
 				C11606912910990C0025C8BD /* LaunchScreen.storyboard in Resources */,
 				C116068E2910990C0025C8BD /* Assets.xcassets in Resources */,
+				C11606B52910997C0025C8BD /* background.png in Resources */,
 				C116068C2910990B0025C8BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
