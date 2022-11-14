@@ -17,6 +17,7 @@
 		C11606A62910990D0025C8BD /* quiz_app_2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11606A52910990D0025C8BD /* quiz_app_2022UITests.swift */; };
 		C11606A82910990D0025C8BD /* quiz_app_2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11606A72910990D0025C8BD /* quiz_app_2022UITestsLaunchTests.swift */; };
 		C11606B52910997C0025C8BD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C11606B42910997C0025C8BD /* background.png */; };
+		C1C3ACDB2922DB55001ED7BC /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3ACDA2922DB55001ED7BC /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C11606A52910990D0025C8BD /* quiz_app_2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_app_2022UITests.swift; sourceTree = "<group>"; };
 		C11606A72910990D0025C8BD /* quiz_app_2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_app_2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C11606B42910997C0025C8BD /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../background.png; sourceTree = "<group>"; };
+		C1C3ACDA2922DB55001ED7BC /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				C11606862910990B0025C8BD /* SceneDelegate.swift */,
 				C11606882910990B0025C8BD /* ViewController.swift */,
 				C116068A2910990B0025C8BD /* Main.storyboard */,
+				C1C3ACDA2922DB55001ED7BC /* QuestionViewController.swift */,
 				C11606B42910997C0025C8BD /* background.png */,
 				C116068D2910990C0025C8BD /* Assets.xcassets */,
 				C116068F2910990C0025C8BD /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				C11606892910990B0025C8BD /* ViewController.swift in Sources */,
 				C11606852910990B0025C8BD /* AppDelegate.swift in Sources */,
+				C1C3ACDB2922DB55001ED7BC /* QuestionViewController.swift in Sources */,
 				C11606872910990B0025C8BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

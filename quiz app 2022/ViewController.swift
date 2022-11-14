@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var faqButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+        
+            // Do any additional setup after loading the view.
 
 
 }
 
+}
