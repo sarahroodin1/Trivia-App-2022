@@ -17,6 +17,7 @@
 		C11606A62910990D0025C8BD /* quiz_app_2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11606A52910990D0025C8BD /* quiz_app_2022UITests.swift */; };
 		C11606A82910990D0025C8BD /* quiz_app_2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11606A72910990D0025C8BD /* quiz_app_2022UITestsLaunchTests.swift */; };
 		C11606B52910997C0025C8BD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C11606B42910997C0025C8BD /* background.png */; };
+		C1A6A863292D4B10003E9C5E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C1A6A862292D4B10003E9C5E /* Alamofire */; };
 		C1C3ACDB2922DB55001ED7BC /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3ACDA2922DB55001ED7BC /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A6A863292D4B10003E9C5E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = "quiz app 2022";
+			packageProductDependencies = (
+				C1A6A862292D4B10003E9C5E /* Alamofire */,
+			);
 			productName = "quiz app 2022";
 			productReference = C11606812910990B0025C8BD /* quiz app 2022.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +226,9 @@
 				Base,
 			);
 			mainGroup = C11606782910990B0025C8BD;
+			packageReferences = (
+				C1A6A861292D4B10003E9C5E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C11606822910990B0025C8BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -612,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1A6A861292D4B10003E9C5E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1A6A862292D4B10003E9C5E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1A6A861292D4B10003E9C5E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C11606792910990B0025C8BD /* Project object */;
 }

@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class ViewController: UIViewController {
-    @IBOutlet weak var faqButton: UIButton!
-    @IBOutlet weak var playButton: UIButton!
     override func viewDidLoad() {
+        AF.request("https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple").response { response in
+            debugPrint(response)
+        }
+
             // Do any additional setup after loading the view.
 
 
