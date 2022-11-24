@@ -11,7 +11,7 @@ import Alamofire
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
-        AF.request("https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple").response { response in
+        AF.request("https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple").responseDecodable(of: MCQuestionList.self){ response in
             debugPrint(response)
         }
 
