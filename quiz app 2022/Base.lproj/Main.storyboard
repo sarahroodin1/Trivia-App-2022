@@ -39,7 +39,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="eAh-Mz-2E9" kind="show" id="fBe-bR-yMr"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDz-g8-YNn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia Blast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY4-CR-xNl">
@@ -89,6 +89,9 @@
                             <constraint firstItem="hAb-fg-re4" firstAttribute="top" secondItem="Fi2-a0-4KZ" secondAttribute="bottom" constant="75" id="wB3-Xc-yNm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="eAh-Mz-2E9" kind="show" id="eNm-4i-4cE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,6 +128,7 @@
                                 <color key="tintColor" red="1" green="0.0" blue="0.85376381769999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="KwH-Ui-z1v"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="fy3-ry-067"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -187,6 +191,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2GP-ev-mRb"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="jLL-2W-lfa" id="iCk-lx-EiR"/>
+                        <outlet property="questionText" destination="jLL-2W-lfa" id="Nx5-63-GMj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbB-Dh-ynS" sceneMemberID="firstResponder"/>
             </objects>

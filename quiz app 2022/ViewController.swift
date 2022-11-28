@@ -10,10 +10,21 @@ import Alamofire
 
 
 class ViewController: UIViewController {
-    override func viewDidLoad() {
-        AF.request("https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple").responseDecodable(of: MCQuestionList.self){ response in
-            debugPrint(response)
-        }
+    
+    @IBAction func startGame(_ sender: Any) {
+            AF.request("https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple").responseDecodable(of: MCQuestionList.self){ response in
+                self.questions = response.value
+                self.performSegue(withIdentifier: "startGameSegue", sender: self)
+            }
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+            if(segue.identifier == "startGameSegue"){
+                let secondView = segue.destination as!
+                QuestionViewController
+                secondView.questionList = self.questions
+            }
+    }
+    
 
             // Do any additional setup after loading the view.
 
