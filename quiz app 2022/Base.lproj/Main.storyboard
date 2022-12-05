@@ -90,7 +90,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="eAh-Mz-2E9" kind="show" id="eNm-4i-4cE"/>
+                        <segue destination="eAh-Mz-2E9" kind="show" identifier="startGameSegue" id="eNm-4i-4cE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -193,7 +193,6 @@
                     <navigationItem key="navigationItem" id="2GP-ev-mRb"/>
                     <connections>
                         <outlet property="questionLabel" destination="jLL-2W-lfa" id="iCk-lx-EiR"/>
-                        <outlet property="questionText" destination="jLL-2W-lfa" id="Nx5-63-GMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbB-Dh-ynS" sceneMemberID="firstResponder"/>

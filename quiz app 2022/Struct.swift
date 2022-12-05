@@ -17,5 +17,5 @@ struct MCQuestion: Decodable{
 }
 
 struct MCQuestionList: Decodable{
-    var results: [MCQuestion]
+    var questions: [MCQuestion]
 }

@@ -9,14 +9,15 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
-    @IBOutlet weak var questionLabel: UILabel?
-    
+    var question:MCQuestion?
     var questionList:MCQuestionList?
     
+    @IBOutlet weak var questionLabel: UILabel?
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.questionLabel?.text = self.questionList?.results[0].question
+        self.questionLabel?.text = self.questionList?.questions[0].question
     }
     // Do any additional setup after loading the view.
     }
