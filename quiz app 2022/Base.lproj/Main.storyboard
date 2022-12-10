@@ -121,6 +121,9 @@
                                     <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="AButtonAction:" destination="eAh-Mz-2E9" eventType="touchUpInside" id="Cgt-7X-wZg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLL-2W-lfa">
                                 <rect key="frame" x="45" y="55" width="300" height="73"/>
@@ -146,6 +149,9 @@
                                     <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="BButtonAction:" destination="eAh-Mz-2E9" eventType="touchUpInside" id="SW4-5E-YYT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVU-d3-w4c">
                                 <rect key="frame" x="81" y="413" width="228" height="105"/>
@@ -159,6 +165,9 @@
                                     <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="CButtonAction:" destination="eAh-Mz-2E9" eventType="touchUpInside" id="dP0-UT-aEX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z35-YO-M2n">
                                 <rect key="frame" x="81" y="543" width="228" height="105"/>
@@ -172,6 +181,9 @@
                                     <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="45"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="DButtonAction:" destination="eAh-Mz-2E9" eventType="touchUpInside" id="hT9-UC-YZB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Zb-dB-HFW"/>
@@ -192,6 +204,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="2GP-ev-mRb"/>
                     <connections>
+                        <outlet property="AButtonOutlet" destination="QxE-F3-l7A" id="cQ9-pS-PiD"/>
+                        <outlet property="BButtonOutlet" destination="6hw-6N-sLD" id="Dgf-LU-0nv"/>
+                        <outlet property="CButtonOutlet" destination="iVU-d3-w4c" id="1xw-jn-qVh"/>
+                        <outlet property="DButtonOutlet" destination="z35-YO-M2n" id="5b8-2d-3C0"/>
                         <outlet property="questionLabel" destination="jLL-2W-lfa" id="iCk-lx-EiR"/>
                     </connections>
                 </viewController>
