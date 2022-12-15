@@ -18,6 +18,7 @@ class ViewController: UIViewController {
             AF.request("https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple").responseDecodable(of: MCQuestionList.self){ response in
                 self.questionList = response.value
                 self.performSegue(withIdentifier: "startGameSegue", sender: self)
+            
             }
         
          func prepare(for segue: UIStoryboardSegue, sender: Any?){

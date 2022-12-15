@@ -12,10 +12,10 @@ struct MCQuestion: Decodable{
     var type: String
     var difficulty: String
     var question: String
-    var correctAnswer: String
-    var incorrectAnswer: [String]
+    var correct_answer: String
+    var incorrect_answers: [String]
 }
 
 struct MCQuestionList: Decodable{
-    var questions: [MCQuestion]
+    var results: [MCQuestion]
 }

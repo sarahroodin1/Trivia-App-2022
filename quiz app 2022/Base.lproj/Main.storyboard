@@ -208,7 +208,7 @@
                         <outlet property="BButtonOutlet" destination="6hw-6N-sLD" id="Dgf-LU-0nv"/>
                         <outlet property="CButtonOutlet" destination="iVU-d3-w4c" id="1xw-jn-qVh"/>
                         <outlet property="DButtonOutlet" destination="z35-YO-M2n" id="5b8-2d-3C0"/>
-                        <outlet property="questionLabel" destination="jLL-2W-lfa" id="iCk-lx-EiR"/>
+                        <outlet property="questionLabel" destination="jLL-2W-lfa" id="vGH-G8-z7Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbB-Dh-ynS" sceneMemberID="firstResponder"/>

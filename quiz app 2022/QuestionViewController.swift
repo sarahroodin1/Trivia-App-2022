@@ -14,34 +14,28 @@ class QuestionViewController: UIViewController {
     
     //if buttons are pressed change title to correct or incorrect
     @IBAction func AButtonAction(_ sender: Any) {
-        if(AButtonOutlet.isPressed){
-            AButtonOutlet.color = UIColor.red
-            AButtonOutlet.setTitle("Incorrect", for: UIControl.State)
+        AButtonOutlet.setTitleColor(UIColor.red, for: UIControl.State.selected)
+        AButtonOutlet.setTitle("Incorrect", for: UIControl.State.selected)
         }
-    }
+
     @IBOutlet weak var AButtonOutlet: UIButton!
     
     @IBAction func BButtonAction(_ sender: Any) {
-        if(BButtonOutlet.isPressed){
-            BButtonOutlet.color = UIColor.green
-            BButtonOutlet.setTitle("Correct", for: UIControl.State)
+        BButtonOutlet.setTitleColor(UIColor.green, for: UIControl.State.selected)
+        BButtonOutlet.setTitle("Correct", for: UIControl.State.selected)
         }
-    }
+
     @IBOutlet weak var BButtonOutlet: UIButton!
     
     @IBAction func CButtonAction(_ sender: Any) {
-        if(CButtonOutlet.isPressed){
-            CButtonOutlet.color = UIColor.red
-            CButtonOutlet.setTitle("Incorrect", for: UIControl.State)
-        }
+        CButtonOutlet.setTitleColor(UIColor.red, for: UIControl.State.selected)
+        CButtonOutlet.setTitle("Incorrect", for: UIControl.State.selected)
     }
     @IBOutlet weak var CButtonOutlet: UIButton!
     
     @IBAction func DButtonAction(_ sender: Any) {
-        if(DButtonOutlet.isPressed){
-            DButtonOutlet.color = UIColor.red
-            DButtonOutlet.setTitle("Incorrect", for: UIControl.State)
-        }
+        DButtonOutlet.setTitleColor(UIColor.red, for: UIControl.State.selected)
+        DButtonOutlet.setTitle("Incorrect", for: UIControl.State.selected)
     }
     @IBOutlet weak var DButtonOutlet: UIButton!
    
@@ -50,23 +44,23 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var randomNum =  Int.random(in: 0..<11)
-        self.questionLabel?.text = self.questionList?.questions[randomNum].question
+        let randomNum =  Int.random(in: 0..<11)
+        
+       // self.questionLabel?.text = self.questionList?.questions[randomNum].question
         
         //assigning values from API to buttons
-        
+                
         //A is always incorrect
-        AButtonOutlet.setTitle(questionList?.questions[randomNum].incorrectAnswer[0], for: .normal)
+        AButtonOutlet.setTitle(questionList?.results[randomNum].incorrect_answers[0], for: .normal)
         //B is always correct
-        BButtonOutlet.setTitle(questionList?.questions[randomNum].correctAnswer, for: .normal)
+        BButtonOutlet.setTitle(questionList?.results[randomNum].correct_answer, for: .normal)
         //C is always incorrect
-        CButtonOutlet.setTitle(questionList?.questions[randomNum].incorrectAnswer[1], for: .normal)
+        CButtonOutlet.setTitle(questionList?.results[randomNum].incorrect_answers[1], for: .normal)
         //D is always incorrect
-        DButtonOutlet.setTitle(questionList?.questions[randomNum].incorrectAnswer[2], for: .normal)
+        DButtonOutlet.setTitle(questionList?.results[randomNum].incorrect_answers[2], for: .normal)
+        
     }
-
-    // Do any additional setup after loading the view.
-    }
+}
     
 
 
