@@ -7,6 +7,22 @@
 
 import UIKit
 
+extension String {
+    init?(htmlEncodedString: String) {
+        guard let data = htmlEncodedString.data(using: .utf8) else {
+            return nil
+        }
+        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+            .documentType: NSAttributedString.DocumentType.html,
+            .characterEncoding: String.Encoding.utf8.rawValue
+        ]
+        guard let attributedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
+            return nil
+        }
+        self.init(attributedString.string)
+    }
+}
+
 class QuestionViewController: UIViewController {
 
     var question:MCQuestion?
@@ -21,8 +37,9 @@ class QuestionViewController: UIViewController {
         AButtonOutlet.setTitleColor(UIColor.red, for: UIControl.State.selected)
         AButtonOutlet.setTitle("Incorrect", for: UIControl.State.selected)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
             self.loadQuestion()
+            
         }
             
         //find code for after 1 second
@@ -74,14 +91,15 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         
         loadQuestion()
-      
+        
         //assigning values from API to buttons
         
         
     }
     func loadQuestion (){
+        
         arrayNum+=1
-        self.questionLabel?.text = self.questionList?.results[arrayNum].question
+        self.questionLabel?.text = String(htmlEncodedString: (self.questionList?.results[arrayNum].question)!)
          
         //A is always incorrect
         AButtonOutlet.setTitle(questionList?.results[arrayNum].incorrect_answers[0], for: .normal)

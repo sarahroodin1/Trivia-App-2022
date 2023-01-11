@@ -8,7 +8,6 @@
 import UIKit
 import Alamofire
 
-
 class ViewController: UIViewController {
     
     var question:MCQuestion?
@@ -37,3 +36,4 @@ class ViewController: UIViewController {
 }
 
 }
+
